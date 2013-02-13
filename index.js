@@ -1,4 +1,3 @@
-
 /**
  * Expose `sort`.
  */
@@ -20,6 +19,8 @@ function sort(el, fn) {
     el.appendChild(arr[i]);
   }
 };
+
+exports.asc = sort;
 
 /**
  * Sort descending.
