@@ -1,0 +1,13 @@
+{
+  "name": "sort",
+  "repo": "component/sort",
+  "description": "Sort DOM elements",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
