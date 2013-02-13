@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Sort</title>
+  <style type="text/css">
+    body {
+      padding: 50px;
+      font: 12px Helvetica;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Tobi</li>
+    <li>Jane</li>
+    <li>Abby</li>
+    <li>Loki</li>
+    <li>Simon</li>
+    <li>Manny</li>
+    <li>Luna</li>
+  </ul>
+
+  <button onclick='asc()'>Sort ascending</button>
+  <button onclick='desc()'>Sort descending</button>
+
+  <script type="text/javascript" src="build/build.js"></script>
+  <script>
+    var sort = require('sort');
+    var ul = document.querySelector('ul');
+
+    function alpha(a, b){
+      a = a.textContent;
+      b = b.textContent;
+      if (a < b) return -1;
+      if (a > b) return 1;
+      return 0;
+    }
+
+    function asc() {
+      sort(ul, alpha);
+    }
+
+    function desc() {
+      sort.desc(ul, alpha);
+    }
+  </script>
+</body>
+</html>
