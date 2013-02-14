@@ -15,10 +15,11 @@ exports = module.exports = sort;
 
 function sort(el, fn) {
   var arr = [].slice.call(el.children).sort(fn);
-  el.innerHTML = '';
+  var frag = document.createDocumentFragment();
   for (var i = 0; i < arr.length; i++) {
-    el.appendChild(arr[i]);
+    frag.appendChild(arr[i]);
   }
+  el.appendChild(frag);
 };
 
 /**
