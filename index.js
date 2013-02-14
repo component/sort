@@ -34,3 +34,9 @@ exports.desc = function(el, fn){
     return ~fn(a, b) + 1;
   });
 };
+
+/**
+ * Sort ascending.
+ */
+
+exports.asc = sort;
