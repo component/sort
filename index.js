@@ -1,4 +1,3 @@
-
 /**
  * Expose `sort`.
  */
@@ -13,8 +12,8 @@ exports = module.exports = sort;
  * @api public
  */
 
-function sort(el, fn) {
-  var arr = [].slice.call(el.children).sort(fn);
+function sort(el, els, fn) {
+  var arr = [].slice.call(els).sort(fn);
   var frag = document.createDocumentFragment();
   for (var i = 0; i < arr.length; i++) {
     frag.appendChild(arr[i]);
