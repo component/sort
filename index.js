@@ -6,8 +6,10 @@ exports = module.exports = sort;
 
 /**
  * Sort `el`'s children with the given `fn(a, b)`.
+ * Optionally specify `els` to sort instead of `el`'s children
  *
  * @param {Element} el
+ * @param {Elements} els
  * @param {Function} fn
  * @api public
  */
