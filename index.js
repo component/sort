@@ -19,6 +19,7 @@ function sort(el, els, fn) {
     fn = els;
     els = el.children;
   }
+  if (!els) els = el.children;
   var arr = [].slice.call(els).sort(fn);
   var frag = document.createDocumentFragment();
   for (var i = 0; i < arr.length; i++) {
@@ -35,8 +36,8 @@ function sort(el, els, fn) {
  * @api public
  */
 
-exports.desc = function(el, fn){
-  sort(el, function(a, b){
+exports.desc = function(el, els, fn){
+  sort(el, els, function(a, b){
     return ~fn(a, b) + 1;
   });
 };
