@@ -13,6 +13,10 @@ exports = module.exports = sort;
  */
 
 function sort(el, els, fn) {
+  if (!fn) {
+    fn = els;
+    els = el.children;
+  }
   var arr = [].slice.call(els).sort(fn);
   var frag = document.createDocumentFragment();
   for (var i = 0; i < arr.length; i++) {
