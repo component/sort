@@ -1,4 +1,3 @@
-
 # sort
 
   Sort DOM elements
@@ -9,15 +8,17 @@
 
 ## API
 
-### sort(el, fn)
+### sort(el, els, fn)
 
   Sort element ascending with the given callback function.
+  
+  `els` is optional defaults to `el.children`
 
-### sort.asc(el, fn)
+### sort.asc(el, els, fn)
 
-  Alias of `sort(el, fn)`
+  Alias of `sort(el, els, fn)`
 
-### sort.desc(el, fn)
+### sort.desc(el, els, fn)
 
   Sort descending, inverting the `fn()` return value.
 
