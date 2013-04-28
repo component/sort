@@ -12,7 +12,7 @@
 
   Sort element ascending with the given callback function.
   
-  `els` is optional defaults to `el.children`
+  `els` is optional and defaults to `el.children`
 
 ### sort.asc(el, els, fn)
 
