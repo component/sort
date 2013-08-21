@@ -2,7 +2,14 @@
   "name": "sort",
   "description": "Sort DOM elements",
   "version": "0.0.3",
-  "keywords": ["sort", "dom", "sorting", "element", "elements", "utility"],
+  "keywords": [
+    "sort",
+    "dom",
+    "sorting",
+    "element",
+    "elements",
+    "utility"
+  ],
   "dependencies": {},
   "development": {},
   "license": "MIT",
@@ -10,5 +17,9 @@
     "scripts": {
       "sort/index.js": "index.js"
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/component/sort.git"
   }
 }
