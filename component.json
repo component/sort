@@ -2,8 +2,15 @@
   "name": "sort",
   "repo": "component/sort",
   "description": "Sort DOM elements",
-  "version": "0.0.3",
-  "keywords": ["sort", "dom", "sorting", "element", "elements", "utility"],
+  "version": "0.0.4",
+  "keywords": [
+    "sort",
+    "dom",
+    "sorting",
+    "element",
+    "elements",
+    "utility"
+  ],
   "dependencies": {},
   "development": {},
   "license": "MIT",

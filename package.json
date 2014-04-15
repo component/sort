@@ -1,7 +1,7 @@
 {
   "name": "component-sort",
   "description": "Sort DOM elements",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": [
     "sort",
     "dom",
