@@ -22,6 +22,8 @@ function sort(el, fn) {
   el.appendChild(frag);
 };
 
+exports.asc = sort;
+
 /**
  * Sort descending.
  *
